@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>My App</title>
+    <title>Georgetown Bookstore</title>
 
     <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.ico') }}">
 
@@ -68,27 +68,27 @@
     -->
     {% set public_nav = [
       ('/about', 'about', 'About'),
-      ('/products', 'products', 'Products'),
+      ('/products2', 'products', 'Products'),
       ('/login', 'login', 'Login'),
     ] -%}
 
     {% set protected_nav = [
       ('/about', 'about', 'About'),
-      ('/products', 'products', 'Products'),
+      ('/products2', 'products', 'Products'),
       ('/user/orders', 'user_orders', 'Orders'),
     ] -%}
 
     {% set active_page = active_page|default('home') -%}
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <nav class="navbar navbar-expand-sm bg-secondary navbar-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="/">
                 <!-- ICON CLASS
                     https://icons.getbootstrap.com/
                 -->
-                <i class="bi-globe" style="font-size: 1.7rem; color: white;"></i>
+                <img src="{{ url_for('static', filename='hoyas.png') }}" alt="" style="max-height: 40px;">
                 &nbsp;
-                My App
+                Georgetown Bookstore
             </a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -158,7 +158,7 @@
             <div class="row">
                 <div class="col-sm-6" style="display: inline; margin-bottom: 5px;">
                     <p class="small">
-                        &copy; Copyright 2023 Your Name Here
+                        &copy; Copyright 2023 - Ken, Kenzie, Mike, Moratwa
                     </p>
                     <p class="small">
                         Made with the <a href="https://github.com/prof-rossetti/flask-sheets-starter-2023">Flask Sheets Starter Template</a>
