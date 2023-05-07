@@ -3,10 +3,6 @@
 
 {% block content %}
 
-    <h1>About</h1>
-
-    <p class="lead">This is the about page</p>
-
     <!DOCTYPE html>
 <html>
 <head>
@@ -44,10 +40,10 @@ h1, h2, h3, h4, h5, h6 {
 </style>
 </head>
 <body>
-<div class="w3-top">
+<!--<div class="w3-top">
     <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
       <a href="#home" class="w3-bar-item w3-button">The Georgetown Bookstore</a>
-      <!-- Right-sided navbar links. Hide them on small screens -->
+      Right-sided navbar links. Hide them on small screens 
       <div class="w3-right w3-hide-small">
         <a href="#home.html" class="w3-bar-item w3-button">Home</a>
         <a href="#about" class="w3-bar-item w3-button">About</a>
@@ -55,11 +51,11 @@ h1, h2, h3, h4, h5, h6 {
         <a href="#contact" class="w3-bar-item w3-button">Contact</a>
       </div>
     </div>
-  </div>
+  </div> -->
   
   <!-- Header -->
   <header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
-    <img class="w3-image" src="georgetown backdrop.jpg" alt="backdrop" width="1400" height="800">
+    <img class="w3-image" src="{{ url_for('static', filename='georgetown-backdrop.jpg') }}" alt="backdrop" width="1400" height="800">
     <div class="w3-display-bottomleft w3-padding-large w3-opacity">
       <h1 class="w3-xxlarge">One Stop Shop for Hoya Swag</h1>
     </div>
@@ -67,11 +63,11 @@ h1, h2, h3, h4, h5, h6 {
   
   <!-- Page content -->
   <div class="w3-content" style="max-width:1100px">
-  
+    
     <!-- About Section -->
     <div class="w3-row w3-padding-64" id="about">
       <div class="w3-col m6 w3-padding-large w3-hide-small">
-       <img src="Student.webp" class="w3-round w3-image w3-opacity-min" alt="Student" width="1000" height="1000">
+       <img src="{{ url_for('static', filename='Student.webp') }}" class="w3-round w3-image w3-opacity-min" alt="Student" width="1000" height="1000">
       </div>
   
       <div class="w3-col m6 w3-padding-large">
@@ -80,7 +76,7 @@ h1, h2, h3, h4, h5, h6 {
       </div>
     </div>
     
-    <hr>
+   <hr>
     
     <!-- Menu Section -->
     <div class="w3-row w3-padding-64" id="menu">
@@ -94,8 +90,8 @@ h1, h2, h3, h4, h5, h6 {
       </div>
       
       <div class="w3-col l6 w3-padding-large">
-          
-        <img src="iverson.jpeg" class="w3-round w3-image w3-opacity-min" alt="bball" style="width:100%">
+     
+        <img src="{{ url_for('static', filename='iverson.jpeg') }}" class="w3-round w3-image w3-opacity-min" alt="bball" style="width:100%">
         <head>
           <meta name="viewport" content="width=device-width, initial-scale=1">
           <style>
@@ -117,15 +113,16 @@ h1, h2, h3, h4, h5, h6 {
             display: table;
             clear: both;
           }
-          </style>
-          </head>
-          <body>
+            </style>
+         </head>
+            <body>
           
-          <h4><b><i>Allen Iverson</i></b></h4>
-          
+              <h4><b><i>Allen Iverson</i></b></h4>
+            
+            </body>
   
   
-          </div>
+      </div>
   
     </div>
   
@@ -144,8 +141,8 @@ h1, h2, h3, h4, h5, h6 {
   
      
       <div class="w3-col l6 w3-padding-large">
-          
-        <img src="campus.webp" class="w3-round w3-image w3-opacity-min" alt="campus" style="width:100%">
+        
+        <img src="{{ url_for('static', filename='campus.webp') }}" class="w3-round w3-image w3-opacity-min" alt="campus" style="width:100%">
   
   
     <!-- Contact Section -->
@@ -172,4 +169,5 @@ h1, h2, h3, h4, h5, h6 {
 
 
 
- {% endblock %} 
+<!-- {% endblock %} 
+  --> 
