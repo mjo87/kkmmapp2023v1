@@ -37,8 +37,8 @@ def create_order():
     user_email = current_user["email"]
 
     # TODO: implement ordering
-    #flash(f"OOPS, Ordering not yet implemented!", "warning")
-    #return redirect("/user/orders")
+    flash(f"OOPS, Ordering not yet implemented!", "warning")
+    return redirect("/user/orders")
 
     service = current_app.config["SPREADSHEET_SERVICE"]
     try:
