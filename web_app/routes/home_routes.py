@@ -16,11 +16,6 @@ def about():
     #return "About Me"
     return render_template("about.html")
 
-@home_routes.route("/products")
-def products():
-    print("PRODUCTS...")
-    #return "Our Products"
-    return render_template("products.html")
 
 @home_routes.route("/hello")
 def hello_world():
