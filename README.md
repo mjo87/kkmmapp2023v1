@@ -2,7 +2,6 @@
 
 This is an example full stack web application built in Python with the Flask framework. This application implements Google Login and interfaces with a Google Sheets datastore.
 
-<img width="750" alt="Screenshot 2023-04-19 at 8 10 15 PM" src="https://user-images.githubusercontent.com/1328807/233225795-2bac1806-37de-4981-a635-bfef72506ad5.png">
 
 ## Setup
 
@@ -12,12 +11,12 @@ To run this app, you'll need to have Anaconda, Python, and Pip installed (specif
 
 ### Installation
 
-Make a copy of the template repository from GitHub, as necessary. Clone your copy of the repo onto your local computer, for example onto your Desktop.
+Make a copy of the repository from GitHub, as necessary. Clone your copy of the repo onto your local computer, for example onto your Desktop.
 
 Navigate to the local repository from the command line, for example if on the Desktop:
 
 ```sh
-cd ~/Desktop/flask-sheets-starter-2023
+cd ~/Desktop/hoya-store
 ```
 
 > NOTE: it is important to navigate to the root directory before running many of the commands below.
@@ -26,13 +25,13 @@ cd ~/Desktop/flask-sheets-starter-2023
 Create new virtual environment (first time only):
 
 ```sh
-conda create -n flask-sheets-starter python=3.10
+conda create -n hoya-store python=3.10
 ```
 
 Activate the virtual environment (first time, or whenever you return to the project):
 
 ```sh
-conda activate flask-sheets-starter
+conda activate hoya-store
 ```
 
 > NOTE: it is important to activate the virual environment before running any of the commands below.
@@ -80,8 +79,9 @@ GOOGLE_SHEETS_DOCUMENT_ID="___________"
 Run the web application (then view in the browser at localhost:5000):
 
 ```sh
+#fetch data from the google sheets
+python -m web_app.services.sheets 
 flask run
 ```
-
 
 ## [Deploying](/setup/RENDER.md)
