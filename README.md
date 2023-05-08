@@ -74,6 +74,10 @@ GOOGLE_SHEETS_DOCUMENT_ID="___________"
 
 > NOTE: when you push your repository to GitHub, the ".env" file does not show up - this is desired behavior, as designated by the ".gitignore" file, to prevent our secret credentials stored in the ".env" file from being uploaded or exposed on GitHub.
 
+# Contact Form
+
+> In order to configure contact form used in the 'About' Section, please refer to the following tutorial: https://github.com/prof-rossetti/internet-technologies/blob/main/notes/formspree.md  
+
 ## Usage
 
 Run the web application (then view in the browser at localhost:5000):
